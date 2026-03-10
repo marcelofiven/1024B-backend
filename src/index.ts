@@ -277,8 +277,15 @@ function calcularMedia(a:number, b:number, c:number): number {
  */
 
 //Início do seu código
-function ehAnoBissexto( ano:number[]): number {
-    
-
+function ehAnoBissexo(ano:number): number [];{
+    const ano = 366
+    if (ano / 4 ) {
+        return "true";
+    } else {
+        return "false";
+    }
 }
+     
+
+
 //Fim do seu código
