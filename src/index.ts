@@ -1,5 +1,7 @@
 // console.log("hello world!")
 
+import { resolve } from "dns"
+
 //import { match } from "node:assert"
 
 // let nome: string = "marcelo"
@@ -276,7 +278,7 @@ function calcularMedia(a:number, b:number, c:number): number {
  * ehAnoBissexto(2021) // false
  */
 
-//Início do seu código
+/**Início do seu código
 function ehAnoBissexo(ano:number): number [];{
     const ano = 366
     if (ano / 4 ) {
@@ -288,4 +290,48 @@ function ehAnoBissexo(ano:number): number [];{
      
 
 
-//Fim do seu código
+Fim do seu código*/
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+//promessass
+//sicronas e assincronas
+//paralismo -> paralelo
+
+
+console.log("inicio do codigo")
+//async function funcao(){
+ const funcao=async ()=>{
+        const prom = new Promise<String>((resolve, reject)=>{ setTimeout(function handle(){
+             resolve("executei a função")
+        },5000)
+    })
+    return prom
+}
+
+
+try {
+    const resultado = await funcao()
+    console.log(resultado)
+}catch (error) {
+    console.log("deu erro")
+}
+ funcao().then((resultado)=>console.log(resultado))
+
+ console.log("fim da execução do codigo")
+
+
+ 
